@@ -1,0 +1,23 @@
+.login{
+
+    background-color: #1abc9c;
+    height: 100vh;
+    padding-top: 23vh;
+}
+.box{
+    font-size: large;
+    text-align: center;
+   color: white;
+    margin-left: 80vh;
+    height: 35vh;
+    width: 50vh;
+    padding: 2vh;
+}
+.but{
+    margin-top: 5vh;
+}
+.new{
+    margin-left: 80vh;
+    padding-top: 3vh;
+
+}

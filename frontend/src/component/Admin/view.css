@@ -1,0 +1,36 @@
+.view{
+    
+    margin-left: 200px;
+    margin-top :10px;  
+    width: 180vh;
+    border: 5px solid rgb(0, 214, 125);
+    height:90vh;
+    margin-bottom: 2vh;
+    
+}
+.col-md-4
+{
+    overflow-y: scroll; 
+    height: 80vh;
+    text-align: center;
+    cursor: pointer;
+
+    
+}
+.list-group 
+{
+    padding: 10px;
+    margin: 10px;
+    
+}
+.heading{
+text-align: center;
+border: 5px solid rgb(22, 128, 62);
+border-style: outset;
+}
+.col-md-4 li:hover{
+    font-weight: 200;
+    transform: scale(1.05);
+    background-color: greenyellow;
+    border-style: outset;
+}

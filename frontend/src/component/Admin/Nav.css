@@ -1,0 +1,80 @@
+#a{
+    color: white;
+}
+.sidebar1 {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar1 a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar1 a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar1 a:hover:not(.active) {
+  background-color: #04AA6D;
+  color: white;
+}
+ 
+  .content {
+    margin-left: 25vh;
+    padding: 10px;
+    height: 90vh;
+    width: 180vh;
+    overflow: scroll;
+    
+    
+
+  }
+
+
+
+
+
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 150%;
+    margin-top: 30px;
+    border-color: black;
+    margin-left: 1px;
+    font-size: 50px;
+  }
+  
+  td, th {
+    border: 2px solid green;
+    
+    text-align: center;
+    padding: 8px;
+    font-family: arial, sans-serif;
+    font-size: 20px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+#i1:hover{
+ color: blue ;
+ transform: scale(1.5);
+}
+#i2:hover{
+  color:red ;
+ transform: scale(1.5);
+
+}

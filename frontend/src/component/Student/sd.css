@@ -1,0 +1,30 @@
+ .a1{
+  
+width: 130vh;
+margin-left: 52vh;
+
+margin-right: 30vh;
+max-height: 100vh;
+overflow-y: scroll;
+height: 90vh;
+   
+}
+/* .a::-webkit-scrollbar {
+    display: none;
+} */
+
+.box{
+    width: 960px;
+    max-height: 500px;
+  
+    box-shadow: 1px 1px 5px 5px;
+}
+.card{
+    border-style: solid;     
+    border-color: #04AA6D;
+    border-width: 5px;
+    padding: 10px;          
+    margin-bottom: 20px;
+
+    
+}

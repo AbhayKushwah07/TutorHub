@@ -1,0 +1,26 @@
+.Abox{
+    height: 90vh;
+    margin-left: 30vh;
+    text-align: center;
+    margin-right: 10vh;
+    overflow-y: scroll;
+    
+}
+#head11{
+    margin-left: 20vh;
+    text-align: center;
+}
+.detail
+{
+font-size:x-large;
+}
+#i11:hover{
+    color: aqua;
+    transform: scale(1.5);
+
+}
+#i01:hover{
+    color: red;
+    transform: scale(1.5);
+
+}

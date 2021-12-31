@@ -1,0 +1,38 @@
+#a{
+    color: white;
+}
+.sidebar2 {
+  margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: black;
+    position: absolute;
+    height: 103vh;
+    overflow: auto;
+  }
+  
+
+  .sidebar2 a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+
+  .sidebar2 a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+
+  .sidebar2 a:hover:not(.active) {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+
+
+ 
+  
+

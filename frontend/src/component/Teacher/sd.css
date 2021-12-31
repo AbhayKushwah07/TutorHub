@@ -1,0 +1,39 @@
+ .a{
+  
+width: 120vh;
+margin-left: 55vh;
+
+margin-right: 30vh;
+height: 100vh;
+overflow-y: scroll;
+   
+}
+/* .a::-webkit-scrollbar {
+    display: none;
+} */
+
+.box{
+    width: 960px;
+    max-height: 500px;
+  
+    box-shadow: 1px 1px 5px 5px;
+}
+.card{
+    border-style: solid;     
+    border-color: #04AA6D;
+    border-width: 5px;
+    padding: 10px;          
+    margin-bottom: 20px;
+
+    
+}
+#icon1:hover
+{
+color: red;
+transform: scale(1.5);
+}
+#icon2:hover
+{
+color: blue;
+transform: scale(1.5);
+}
