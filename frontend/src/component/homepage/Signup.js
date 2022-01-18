@@ -112,6 +112,7 @@ let history=useHistory();
   });
 
   const onChange = async (e) => {
+    check();
     setsuser({ ...suser, [e.target.name]: e.target.value });
     settuser({ ...tuser, [e.target.name]: e.target.value });
   };
@@ -139,7 +140,7 @@ let history=useHistory();
               <label>Password</label>
             </div>
             <div className="txt_field">
-              <input id="confirm_password" name="password" onChange={{onChange, check}} minLength={5} type="password" required  />
+              <input id="confirm_password" name="password" onChange={onChange} minLength={5} type="password" required  />
           
               <span id="message"></span>
               <label> Confirm Password </label> 
@@ -156,7 +157,7 @@ let history=useHistory();
                 name="profile"
                 onChange={onChange}
               >
-                <option style={{ display: "none" }} selected>
+                <option style={{ display: "none" }} selected required>
                   Choose profile
                 </option>
                 <option>Student</option>
