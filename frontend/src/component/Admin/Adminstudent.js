@@ -30,7 +30,7 @@ export const Adminstudent = () => {
   
   };
   const Delete = async (id) => {
-    if (window.confirm("Do you really want to delete this course ")) {
+    if (window.confirm("Do you really want to delete this student profile ")) {
 
       deleteStudent(id);
       await del(id);

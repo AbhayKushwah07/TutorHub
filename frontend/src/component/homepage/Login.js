@@ -176,7 +176,7 @@ const save=async(body)=>{
                 login
               </button>
             </div>
-            <Link to="/#" onClick={change}  style={{ float: "right", padding: "1px" }}>
+            <Link to="#" onClick={change}  style={{ float: "right", padding: "1px" }}>
               forgot password
             </Link>
             <Link to="/signup" style={{ float: "left", padding: "1px" }}>

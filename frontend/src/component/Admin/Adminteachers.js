@@ -29,7 +29,7 @@ export const Adminteacher = () => {
   }
   
   const Delete = (id) => {
-    if (window.confirm("Do you really want to delete this course ")) {
+    if (window.confirm("Do you really want to delete this teacherprofile ")) {
       deleteteacher(id);
       del(id)
       window.location.reload(false);

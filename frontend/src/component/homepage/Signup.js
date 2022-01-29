@@ -41,7 +41,7 @@ let history=useHistory();
         history.push('/studentdashboard')
       }
       else{
-        alert("User already exist")
+        alert("Email already exist")
       }
       
     }
@@ -62,7 +62,7 @@ let history=useHistory();
         history.push('/teacherdashboard')
       }
       else{
-        alert("User already exist")
+        alert("Email already exist")
       }
      
 
