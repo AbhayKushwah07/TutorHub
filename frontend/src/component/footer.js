@@ -13,9 +13,9 @@ const footer = () => {
           </h3>
 
           <p className="footer-links">
-            <h5>Founder</h5>
-            <h6>Abhay Kushwah</h6>
-            <h6>Priyam Jain</h6>
+            <b>Founder</b><br/>
+            <b>Abhay Kushwah</b><br/>
+            <b>Priyam Jain</b>
           </p>
 
           <p className="footer-company-name">Tutor Hub &copy; 2021</p>
@@ -37,7 +37,7 @@ const footer = () => {
           <div>
             <i className="fa fa-envelope"></i>
             <p>
-              <Link href="mailto:abhaykushwah07@gmail.com">tutorhub@gmail.com</Link>
+              <Link to="mailto:abhaykushwah07@gmail.com">tutorhub@gmail.com</Link>
             </p>
           </div>
         </div>
@@ -50,13 +50,13 @@ const footer = () => {
           </p>
 
           <div className="footer-icons">
-            <Link to="/#">
+            <Link to="">
               <i className="fab fa-facebook-f"></i>
             </Link>
-            <Link to="/#">
+            <Link to="">
               <i className="fab fa-twitter"></i>
             </Link>
-            <Link to="/#">
+            <Link to="">
               <i className="fab fa-linkedin"></i>
             </Link>
           </div>

@@ -10,7 +10,7 @@ export const Student_profile = () => {
 
   const update = () => {
     Updatestudent(estudent);
-    window.location.reload(false);
+    
   };
 
   const [estudent, esetstudent] = useState({
@@ -87,7 +87,7 @@ export const Student_profile = () => {
             <div className="modal-body">
               <div className="container">
                 <div className="settle">
-                  <form action="#">
+                  <form  onSubmit={update}>
                     <div className="user-details">
                       <div className="input-box">
                         <span className="details">Full name</span>
@@ -134,7 +134,7 @@ export const Student_profile = () => {
                           onChange={onChange}
                           name="phone"
                           value={estudent.phone}
-                          pattern="[6-9]{1}[0-9]{9}"
+                          
                         />
                       </div>
 
@@ -220,12 +220,7 @@ export const Student_profile = () => {
                         </select>
                       </div>
                     </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div className="modal-footer">
-              <button
+                    <button
                 type="button"
                 className="btn btn-secondary"
                 data-bs-dismiss="modal"
@@ -235,10 +230,16 @@ export const Student_profile = () => {
               <button
                 type="submit"
                 className="btn btn-primary"
-                onClick={update}
+                
               >
                 Save
               </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div className="modal-footer">
+             
             </div>
           </div>
         </div>
@@ -269,6 +270,7 @@ export const Student_profile = () => {
                   name="phone"
                   value={student.s_phone}
                   pattern="[6-9]{1}[0-9]{9}"
+                  maxLength={10}
                 />
               </div>
 

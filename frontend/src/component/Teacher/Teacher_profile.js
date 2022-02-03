@@ -9,8 +9,9 @@ export const Teacher_profile = () => {
       getteacherD()
   })
   const  update = async () => {
+    
     await Updateteacher(eteacher);
-    window.location.reload(false);
+    
   };
 const [eteacher, esetteacher] = useState({
   email: "",
@@ -86,7 +87,7 @@ const onChange = async (e) => {
             <div className="modal-body">
               <div className="container">
                 <div className="settle">
-                  <form action="#">
+                  <form onSubmit={update} >
                     <div className="user-details">
                       <div className="input-box">
                         <span className="details">Full name</span>
@@ -133,7 +134,7 @@ const onChange = async (e) => {
                           onChange={onChange}
                           name="phone"
                           value={eteacher.phone}
-                          pattern="[6-9]{1}[0-9]{9}"
+                          pattern="[0-9]{10}"
                         />
                       </div>
 
@@ -215,11 +216,14 @@ const onChange = async (e) => {
                         ></textarea>
                       </div>
                     </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div className="modal-footer">
+                    <button
+                type="submit"
+                className="btn btn-primary"
+                
+              >
+                Save
+              </button>
+
               <button
                 type="button"
                 className="btn btn-secondary"
@@ -227,13 +231,13 @@ const onChange = async (e) => {
               >
                 Close
               </button>
-              <button
-                type="submit"
-                className="btn btn-primary"
-                onClick={update}
-              >
-                Save
-              </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div className="modal-footer">
+            
+             
             </div>
           </div>
         </div>

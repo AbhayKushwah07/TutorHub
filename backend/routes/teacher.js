@@ -83,54 +83,6 @@ router.post("/signup", async (req, res) => {
   }
 });
 
-// // ROUTE 2: Student login. No login required
-// router.post("/login", (req, res) => {
-//   let status = 1;
-//   let pass;
-//   const { email, password } = req.body;
-//   con.query(
-//     `SELECT t_email,t_password FROM teacher WHERE t_email="${email}"`,
-//     function (err, result, fields) {
-//       if (err) throw err;
-//       if (result[0]) {
-//         status = 0;
-//       }
-//       if (status == 0) {
-//         pass = result[0].t_password;
-//       }
-//     }
-//   );
-
-//   try {
-//     async function main() {
-//       const data = {
-//         user: {
-//           id: email,
-//         },
-//       };
-//       const authtoken = jwt.sign(data, JWT_SECRET);
-
-//       res.json({ authtoken });
-//     }
-//     setTimeout(async () => {
-//       if (status) {
-//         status = 0;
-//         res.status(400).json({ error: "login with correct credentials" });
-//       } else {
-//         const passwordCompare = await bcrypt.compare(password, pass);
-//         if (!passwordCompare) {
-//           return res.status(400).json({
-//             error: "Please try to login with correct credentials",
-//           });
-//         }
-//         main();
-//       }
-//     }, 100);
-//   } catch (error) {
-//     console.error(error.message);
-//     res.status(500).send("Internal Server Error");
-//   }
-// });
 
 // ROUTE 3: Get student details. Login required
 router.get("/getteacher", fetchuser, async (req, res) => {
